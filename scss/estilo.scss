@@ -1,0 +1,301 @@
+@import url('https://fonts.googleapis.com/css2?family=Akshar:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+@import "maps";
+
+body, html {
+    font-family: "Work Sans";
+    background-color: #f6f6f6;
+}
+
+main {
+    background-color: #f6f6f6;
+}
+.choose {
+    height: 100vh;
+}
+
+section {
+    background-color: #f6f6f6;
+}
+
+
+.navbar {
+    font-family: "Akshar";
+    font-size: 20px;
+    background-color:#5865f2;
+    height: 5rem;
+    z-index: 3;
+    color: white;
+
+    button {
+        color: white;
+    }
+
+
+
+
+    .navbar-brand {
+        pointer-events: none;
+    }
+
+    .nav-item{
+        font-family: "Work Sans";
+    }
+    
+    
+    ul
+    li {
+        font-family: "Work Sans";
+    }
+
+    .collapse {
+    background-color:#5865f2;
+        border: none;
+    }
+
+    a {
+        color: white;
+        font-size:26px;
+        background-color: #5865f2;
+    }
+    a:hover {
+        border-bottom: 2px #fff solid;
+        color: white;
+    }
+
+    #dropdownMenuButton1 {
+        border: none;
+        border-radius: 0px;
+        border-bottom: 2px #fff solid;
+    }
+
+    .btn{
+        font-size: 24px;
+        font-family: "Work Sans";
+    }
+
+
+
+}
+
+.flex {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-top: 50px;
+    gap: 10px;
+    background-color: #f6f6f6;
+
+}
+
+.flex-menu {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-top: 10%;
+    gap: 10px;
+    height: 500px;
+}
+
+img{
+    width: 100%;
+}
+
+.minicontainer{
+    text-align: center;
+    border-radius: 10px;
+}
+
+section{
+    padding-top: 5%;
+    height: 30rem;
+}
+
+.amd {
+    width: 100%;
+    transition: 1s;
+    border-radius: 10px;
+}
+
+.amd-container {
+    width: 40vh;
+}
+
+.amd-container:hover .amd{
+    transform: scale(1.1);
+}
+
+.footer {
+
+    .grid {
+        display: flex;
+        justify-content: space-between;
+
+    }
+    padding-top: 10%;
+    background-color: #23272a;
+    color: #fff;
+    li {
+        list-style: none;
+    }
+    a {
+        color: #fff;
+        text-decoration: none;
+    }
+
+    a:hover {
+        color:#5865f2;
+    }
+}
+
+.pricing {
+    display: flex;
+    width: fit-content;
+    height: 100%;
+    padding-bottom: 10%;
+
+}
+
+.pricing-mini {
+    display: flex;
+    width: 66%;
+    gap: 5vh;
+    flex-wrap: wrap;
+    margin-left: 2vh;
+}
+
+.columna {
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 33% ;
+    height:100% ;
+    gap: 2vh;
+}
+
+.td {
+    display: flex;
+    width: 100px;
+    height: fit-content;
+    margin-left: 5%;
+}
+
+.product {
+    max-width: 200px;
+    max-height: fit-content;
+    padding: auto;
+    background-color: #fff;
+    border-radius: 2px;
+    a {
+        text-decoration: none;
+        color: black;
+    }
+
+    h2 {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    img {
+        border-radius: 2px;
+    }
+}
+
+.god-container {
+    display: flex;
+    height: 100%;
+    gap: 10vh;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    .navver {
+        width: 20%;
+        border-radius: 10px;
+        margin-left: 5vh;
+        ul {
+            list-style: none;
+        }
+
+        li {
+            margin-top: 5px;
+            font-size: larger;
+
+            width: fit-content;
+        }
+
+        a:hover {
+            color: #5865f2;
+        }
+    }
+
+    .sub-container {
+        width: 100vh;
+        border-radius: 10px;
+        background-color: #fff;
+        height: 100%;
+        gap: 10vh;
+
+        p {
+            margin-top: 10px;
+            margin-left: 5vh;
+        }
+    }
+
+    .object {
+        display: flex;
+        width: 100%;
+        height: fit-content;
+        border-bottom: 1px solid lightgray  ;
+        background-color: #fff;
+        .object-image {
+            max-width: 175px;
+            max-height: 175px;
+        }
+    }
+}
+
+@media (max-width:450px) {
+    .navver {
+        display: none;
+    }
+    .sub-container {
+        width: 100%;
+    }
+
+    .columna {
+        display: none;
+    }
+
+    .pricing-mini {
+        width: 100%;
+        justify-content: center;
+    }
+
+}
+
+.contact-container {
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    gap: 10%;
+    flex-wrap: wrap;
+    .contact-mini {
+        width: 50vh;
+        height: 80%;
+        background-color: #fff;
+        border-radius: 10px;
+        margin-top: 10px;
+        margin-bottom: 30px;
+        h2, h3, p, div {
+            margin-left: 5%;
+            margin-top: 5%
+        }
+        div {
+            width: 90%;
+            iframe {
+                width: 100%;
+                height: 40vh;
+                margin-top: 10px;
+            }
+        }
+    }
+}

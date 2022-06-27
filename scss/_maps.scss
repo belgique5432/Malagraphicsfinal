@@ -1,0 +1,6 @@
+$estilo:(color:#373638,tamFuente:26px);
+
+.nav-link {
+    background-color: map-get($estilo,color);
+    font-size: map-get($estilo, tamFuente);
+}

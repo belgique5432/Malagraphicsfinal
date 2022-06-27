@@ -1,0 +1,9 @@
+@mixin descripcion {
+    font-size: 12px;
+    text-align: center;
+}
+
+
+.product {
+    @include descripcion();
+}
